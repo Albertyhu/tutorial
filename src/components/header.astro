@@ -1,12 +1,13 @@
 ---
 import MenuIcon from "./hamburger.astro";
+import ThemeIcon from "./ThemeIcon.astro";
+import Navigation from './navigation.astro'; 
 ---
 
-<header class="flex flex-row bg-black text-white min-h-[30px] relative">
+<header class="flex flex-row bg-black text-white min-h-[50px] sm:min-h-[30px] relative">
     <MenuIcon />
     <nav id="header=wrapper" class="nav-links">
-        <a href="/">Home</a>
-        <a href="/about/">About</a>
-        <a href="/blog/">Blog</a>
+        <Navigation />
+        <ThemeIcon />
     </nav>
 </header>

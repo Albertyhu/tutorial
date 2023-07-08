@@ -2,6 +2,9 @@
 const { post } = Astro.props;
 ---
 
-<a href={post.url} class="hover:underline hover:font-bold">
-    <li>{post.frontmatter.title}</li>
-</a>
+<li>
+    <a href={post.url} class="hover:underline hover:font-bold">
+      {post.frontmatter.title}
+    </a> 
+</li>  
+  
