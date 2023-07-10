@@ -8,5 +8,5 @@ import preact from "@astrojs/preact";
 export default defineConfig({
   integrations: [react(), tailwind(), preact()],
     site: 'https://Albertyhu.github.io/tutorial',
-  base: '/tutorial',
+  base: '/',
 });
