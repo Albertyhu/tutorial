@@ -33,7 +33,7 @@ body {
   display:none; 
 }
 
-.layer1Style, .layer2Style, .layer3Style, .layer4Style {
+.layer1Style, .layer2Style, .layer3Style, .layer4Style, .layer5Style {
   position: absolute;
   height: 100%;
   width: 100%;
@@ -41,9 +41,12 @@ body {
   z-index: -1;
 }
 
+.layer1Style{
+    transform:translateZ(-2px) scale(1.22);
+}
 
 .layer2Style{
-    transform:translateZ(-10px) scale(2.1);
+    transform:translateZ(-4px) scale(1.42);
 }
 
 .layer3Style{
@@ -51,5 +54,9 @@ body {
 }
 
 .layer4Style{
-    transform:translateZ(-2.5px) scale(1.27);
+    transform:translateZ(-9px) scale(1.92);
+}
+
+.layer5Style{
+    transform:translateZ(-10px) scale(2.0);
 }
