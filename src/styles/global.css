@@ -26,9 +26,10 @@
 }
 
 body {
-  height: 100vh;
   margin-top: 30px;
   position: relative;
+  display: flex; 
+  flex-direction: column;
 }
 
 /* nav styles */
@@ -102,3 +103,4 @@ html.dark {
     padding: 15px 20px;
   }
 }
+

@@ -1,8 +1,8 @@
 ---
-import Header from "../components/header.astro";
-import Footer from "../components/footer.astro";
-import "../styles/global.css";
-const { pageTitle } = Astro.props;
+import Footer from '../components/footer.astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ParallaxHero from '../components/parallaxHero.astro';
+import Header from '../components/header.astro';
 
 ---
 
@@ -12,12 +12,15 @@ const { pageTitle } = Astro.props;
         <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
         <meta name="viewport" content="width=device-width" />
         <meta name="generator" content={Astro.generator} />
-        <title>{pageTitle}</title>
+        <title>WB Simplified</title>
     </head>
     <body>
         <Header />
-        <div class="w-11/12 mx-auto h-[100vh]">
-            <slot />
+        <div 
+            id="wrapper"
+            class="overflow-hidden h-[100vh] mb-[100px]"
+        >
+           <ParallaxHero />
         </div>
         <Footer />
         <script>

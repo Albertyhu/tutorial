@@ -1,0 +1,55 @@
+body {
+  margin-top: 30px;
+  position: relative;
+  display: flex; 
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+
+.header{
+    transform-style: preserve-3d; 
+    position: relative; 
+    justify-content: center;
+    display:flex;
+    height: 100%;
+    align-items: center;
+    z-index:-1;
+}
+
+.sectionStyle {
+  perspective: 10px; 
+  overflow-y: auto; 
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #e2dddc; 
+  background-attachment: fixed;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  z-index: -1;
+}
+
+.sectionStyle::-webkit-scrollbar {
+  display:none; 
+}
+
+.layer1Style, .layer2Style, .layer3Style, .layer4Style {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+
+.layer2Style{
+    transform:translateZ(-10px) scale(2.1);
+}
+
+.layer3Style{
+    transform:translateZ(-5px) scale(1.52);
+}
+
+.layer4Style{
+    transform:translateZ(-2.5px) scale(1.27);
+}
