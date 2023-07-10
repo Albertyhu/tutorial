@@ -6,5 +6,7 @@ import preact from "@astrojs/preact";
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [react(), tailwind(), preact()]
+  integrations: [react(), tailwind(), preact()],
+    site: 'https://Albertyhu.github.io/tutorial',
+  base: '/tutorial',
 });
