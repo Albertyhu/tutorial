@@ -1,0 +1,67 @@
+body {
+  position: relative;
+  display: flex; 
+  flex-direction: column;
+  overflow-y: auto;
+}
+
+
+.header{
+    transform-style: preserve-3d; 
+    position: relative; 
+    justify-content: center;
+    display:flex;
+    height: 100%;
+    max-height: 100vh;
+    align-items: center;
+    z-index:-1;
+}
+
+.sectionStyle {
+  perspective: 10px; 
+  overflow-y: auto; 
+  height: 100vh;
+  overflow-x: hidden;
+  background-color: #e2dddc; 
+  background-attachment: fixed;
+    -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  z-index: -1;
+}
+
+.sectionStyle::-webkit-scrollbar {
+  display:none; 
+}
+
+.layer1Style, .layer2Style, .layer3Style, .layer4Style, .layer5Style {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.layer1Style{
+    transform:translateZ(-10px) scale(2.2);
+}
+
+.layer2Style{
+    transform:translateZ(-7.5px) scale(1.77);
+}
+
+.layer3Style{
+    transform:translateZ(-5px) scale(1.52);
+}
+
+.layer4Style{
+    transform:translateZ(-2.5px) scale(1.27);
+}
+
+.layer5Style{
+    transform:translateZ(0px) scale(1.0);
+}
+
+.titleStyle{
+    transform:translateZ(-8.5px) translateY(-300%) scale(1.87);
+    text-shadow: #333333 1px 0 20px;
+}
