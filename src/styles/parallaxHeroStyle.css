@@ -15,6 +15,8 @@ body {
     max-height: 100vh;
     align-items: center;
     z-index:-1;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
 }
 
 .sectionStyle {
@@ -39,6 +41,7 @@ body {
   width: 100%;
   object-fit: cover;
   z-index: -1;
+  will-change: transform;
 }
 
 .layer1Style{
@@ -54,7 +57,7 @@ body {
 }
 
 .layer4Style{
-    transform:translateZ(-9px) scale(1.92);
+    transform:translateZ(-8px) scale(1.82);
 }
 
 .layer5Style{
