@@ -63,3 +63,20 @@ body {
 .layer5Style{
     transform:translateZ(-10px) scale(2.0);
 }
+
+#textWrapper{
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+
+#textWrapper::before{
+ content:'';
+ position: absolute;  
+ bottom: 0;
+ height: 100%; 
+ width: 100%; 
+ background: linear-gradient(to top, #000000 1%, transparent 99%);
+ z-index: 50;
+ 
+}

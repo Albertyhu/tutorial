@@ -1,3 +1,8 @@
+body {
+  margin: 0;
+  overflow-y: hidden;
+}
+
 .wrapper {
   height: 100vh;
   overflow-y: auto;
@@ -5,7 +10,7 @@
   perspective: 10px;
 }
 
-header {
+.header {
   position: relative;
   display: flex;
   justify-content: center;
@@ -16,11 +21,11 @@ header {
 }
 
 .background {
-  transform: translateZ(-10px) scale(2);
+  transform: translateZ(-10px) scale(2.2);
 }
 
 .foreground {
-  transform: translateZ(-5px) scale(1.5);
+  transform: translateZ(-5px) scale(1.7);
 }
 
 .background,

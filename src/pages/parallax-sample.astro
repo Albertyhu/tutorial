@@ -1,6 +1,5 @@
 ---
-import Footer from '../components/footer.astro';
-import ParallaxHero from '../components/parallaxHero.astro';
+import ParallaxHero from '../components/parallaxHero2.astro';
 import Header from '../components/header.astro';
 
 ---
@@ -13,10 +12,9 @@ import Header from '../components/header.astro';
         <meta name="generator" content={Astro.generator} />
         <title>WB Simplified</title>
     </head>
+    <Header />
     <body>
-        <Header />
         <ParallaxHero />
-        <Footer />
         <script>
             import "../scripts/menu.js";
         </script>
