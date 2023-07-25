@@ -80,7 +80,8 @@ body {
     transform:translateZ(-8.75px) scale(2.075);
 }
 .layer8Style{
-    transform:translateZ(-10px) scale(2.2);
+    /* transform:translateZ(-10px) scale(2.2); */
+    transform:translateZ(-11.25px) scale(2.325); 
     background-attachment: fixed;
 }
 
